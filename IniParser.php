@@ -15,6 +15,8 @@
  * @author Till Klampaeckel <till@php.net>
  * @author Sergey Solovyev
  */
+namespace uspilot\IniParser;
+
 class IniParser {
 
     /**
@@ -66,7 +68,6 @@ class IniParser {
     /**
      * @param string $file
      *
-     * @return IniParser
      */
     public function __construct($file = null) {
         if ($file !== null) {
@@ -90,7 +91,7 @@ class IniParser {
             throw new LogicException("Need a file to parse.");
         }
 
-        $simple_parsed = parse_ini_file($this->file, true, INI_SCANNER_TYPED);
+        $simple_parsed = parse_ini_file($this->file, true, 2 /*INI_SCANNER_TYPED*/);
         $inheritance_parsed = $this->parseSections($simple_parsed);
         return $this->parseKeys($inheritance_parsed);
     }
@@ -252,6 +253,7 @@ class IniParser {
                         return $output;
                     }
                 }
+
             // fallthrough
             // try regex parser for simple estructures not JSON-compatible (ex: colors = [blue, green, red])
             case self::PARSE_SIMPLE:

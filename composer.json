@@ -10,9 +10,10 @@
     }
   ],
   "require": {
-    "php": "^5.5|^7.0",
-    "ext-pdo": "*",
-    "ext-json": "*",
-    "ext-mbstring": "*"
+    "ext-json": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "uspilot\\IniParser\\": "/"}
   }
 }
