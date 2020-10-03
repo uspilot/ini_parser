@@ -6,13 +6,13 @@
   "minimum-stability": "dev",
   "authors": [
     {
-      "name": "US_Pilot",
+      "name": "US_Pilot"
     }
   ],
   "require": {
     "php": "^5.5|^7.0",
     "ext-pdo": "*",
     "ext-json": "*",
-    "ext-mbstring": "*",
+    "ext-mbstring": "*"
   }
 }
