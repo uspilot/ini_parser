@@ -3,7 +3,7 @@
   "description": "INI file PHP parser",
   "type": "library",
   "license": "MIT",
-  "minimum-stability": "stable",
+  "minimum-stability": "dev",
   "authors": [
     {
       "name": "US_Pilot",
