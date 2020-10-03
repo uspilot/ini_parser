@@ -16,6 +16,7 @@
  * @author Sergey Solovyev
  */
 namespace uspilot\IniParser;
+use \LogicException, \InvalidArgumentException, \UnexpectedValueException;
 
 class IniParser {
 
