@@ -1,0 +1,18 @@
+{
+  "name": "uspilot/IniParser",
+  "description": "INI file PHP parser",
+  "type": "library",
+  "license": "MIT",
+  "minimum-stability": "stable",
+  "authors": [
+    {
+      "name": "US_Pilot",
+    }
+  ],
+  "require": {
+    "php": "^5.5|^7.0",
+    "ext-pdo": "*",
+    "ext-json": "*",
+    "ext-mbstring": "*",
+  }
+}
