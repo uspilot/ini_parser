@@ -1,6 +1,6 @@
 {
-  "name": "uspilot/IniParser",
-  "description": "INI file PHP parser",
+  "name": "uspilot/ini_parser",
+  "description": "PHP .INI file parser",
   "type": "library",
   "license": "MIT",
   "minimum-stability": "dev",
