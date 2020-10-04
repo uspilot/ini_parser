@@ -15,7 +15,8 @@
  * @author Till Klampaeckel <till@php.net>
  * @author Sergey Solovyev
  */
-namespace uspilot\IniParser;
+namespace IniParser;
+use \ArrayObject;
 use \LogicException, \InvalidArgumentException, \UnexpectedValueException;
 
 class IniParser {
